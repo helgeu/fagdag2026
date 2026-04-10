@@ -8,7 +8,7 @@ Set up VS Code with GitHub Copilot on **Windows**, **Mac**, or **Linux**.
 |----------|---------|
 | **Windows** | `winget install Microsoft.VisualStudioCode` |
 | **Mac** | `brew install --cask visual-studio-code` |
-| **Linux** | See [Linux instructions](#vs-code-on-linux) below |
+| **Linux** | `sudo snap install code --classic` or see [apt instructions](#vs-code-on-linux-via-apt) if snap is not available |
 
 ## 2. Install Git
 
@@ -87,9 +87,9 @@ code --install-extension esbenp.prettier-vscode
 for ext in ms-dotnettools.csharp ms-dotnettools.csdevkit ms-dotnettools.vscode-dotnet-runtime dbaeumer.vscode-eslint esbenp.prettier-vscode; do code --install-extension "$ext"; done
 ```
 
-## VS Code on Linux
+## VS Code on Linux via apt
 
-Ubuntu/Debian — install via Microsoft's apt repo (not snap):
+If snap is not available on your system, use Microsoft's official apt repo instead (Ubuntu/Debian):
 
 ```bash
 sudo apt install -y wget gpg apt-transport-https
