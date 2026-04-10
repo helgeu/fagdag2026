@@ -29,7 +29,9 @@ Checklist:
 - [ ] Decide which GitHub account to use (the one with Copilot access)
 - [ ] Open VS Code, click the person icon in the bottom left
 - [ ] Sign in with the correct GitHub account
-- [ ] Verify Copilot access at [github.com/settings/copilot](https://github.com/settings/copilot)
+- [ ] Verify Copilot access at [github.com/settings/copilot](https://github.com/settings/copilot) — it should look like this:
+
+![Copilot settings](copilot-settings.png)
 - [ ] If Copilot is not enabled, check that you're signed in with the right account
 
 ## 4. Start using Copilot
