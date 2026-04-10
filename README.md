@@ -8,7 +8,7 @@ Set up VS Code with GitHub Copilot on **Windows**, **Mac**, or **Linux**.
 |----------|---------|
 | **Windows** | `winget install Microsoft.VisualStudioCode` |
 | **Mac** | `brew install --cask visual-studio-code` |
-| **Linux** | `sudo snap install code --classic` |
+| **Linux** | See [Linux instructions](#vs-code-on-linux) below |
 
 ## 2. Install Git
 
@@ -32,7 +32,7 @@ Checklist:
 - [ ] Verify Copilot access at [github.com/settings/copilot](https://github.com/settings/copilot)
 - [ ] If Copilot is not enabled, check that you're signed in with the right account
 
-## 5. Start using Copilot
+## 4. Start using Copilot
 
 Once signed in, Copilot just works:
 
@@ -42,7 +42,7 @@ Once signed in, Copilot just works:
 
 That's it. You're coding with AI.
 
-## 6. Install extensions
+## 5. Install extensions
 
 ### C# / .NET
 
@@ -85,4 +85,18 @@ code --install-extension esbenp.prettier-vscode
 
 ```bash
 for ext in ms-dotnettools.csharp ms-dotnettools.csdevkit ms-dotnettools.vscode-dotnet-runtime dbaeumer.vscode-eslint esbenp.prettier-vscode; do code --install-extension "$ext"; done
+```
+
+## VS Code on Linux
+
+Ubuntu/Debian — install via Microsoft's apt repo (not snap):
+
+```bash
+sudo apt install -y wget gpg apt-transport-https
+wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
+sudo install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
+echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" | sudo tee /etc/apt/sources.list.d/vscode.list > /dev/null
+rm -f packages.microsoft.gpg
+sudo apt update
+sudo apt install -y code
 ```
