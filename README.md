@@ -20,11 +20,17 @@ Set up VS Code with GitHub Copilot on **Windows**, **Mac**, or **Linux**.
 
 ## 3. Sign in to GitHub
 
-Open VS Code, click the person icon in the bottom left, and sign in with your GitHub account.
+> **Important:** You may have multiple GitHub accounts (personal, customer, employer).
+> Make sure you sign in with the account that has Copilot access.
+> If you're on a customer machine, you might need to switch to your employer account (e.g. Itera) or vice versa.
 
-## 4. Verify Copilot access
+Checklist:
 
-Confirm you have access at [github.com/settings/copilot](https://github.com/settings/copilot).
+- [ ] Decide which GitHub account to use (the one with Copilot access)
+- [ ] Open VS Code, click the person icon in the bottom left
+- [ ] Sign in with the correct GitHub account
+- [ ] Verify Copilot access at [github.com/settings/copilot](https://github.com/settings/copilot)
+- [ ] If Copilot is not enabled, check that you're signed in with the right account
 
 ## 5. Start using Copilot
 
