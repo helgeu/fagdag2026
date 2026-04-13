@@ -2,6 +2,10 @@
 
 Set up VS Code with GitHub Copilot on **Windows**, **Mac**, or **Linux**.
 
+## Prerequisites
+
+- [ ] Connect your GitHub account to Itera by following [the process described by Chris Searle](https://iterano.slack.com/archives/CA1JMUT50/p1774950332485479)
+
 ## 1. Install VS Code
 
 | Platform | Command |
